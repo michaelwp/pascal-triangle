@@ -11,10 +11,13 @@ void pascalTriangle(int l, int n, vector<int> p);
 
 int main() {
     vector<int> p;
+    int l, n;
 
-    p = {1};
+    p = {1}; // init result in array;
+    l = 0; //
+    n = 5; // how many result needed
 
-    pascalTriangle(0, 5, p);
+    pascalTriangle(l, n, p);
     return 0;
 }
 
@@ -35,42 +38,4 @@ void pascalTriangle(int l, int n, vector<int> p) {
     cout << endl;
     pascalTriangle(l+1, n, arr);
 }
-
-
-
-
-
-//int binomialCoeff(int n, int k);
-//
-//void printPascal(int n)
-//{
-//    for (int line = 0; line < n; line++)
-//    {
-//        for (int i = 0; i <= line; i++)
-//            printf("%d ",binomialCoeff(line, i));
-//        printf("\n");
-//    }
-//}
-//
-//int binomialCoeff(int n, int k)
-//{
-//    int res = 1;
-//    if (k > n - k)
-//        k = n - k;
-//
-//    for (int i = 0; i < k; ++i)
-//    {
-//        res *= (n - i);
-//        res /= (i + 1);
-//    }
-//
-//    return res;
-//}
-//
-//int main()
-//{
-//    int n = 7;
-//    printPascal(n);
-//    return 0;
-//}
 
