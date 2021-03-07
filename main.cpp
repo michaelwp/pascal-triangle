@@ -14,7 +14,7 @@ int main() {
     int l, n;
 
     p = {1}; // init result in array;
-    l = 0; //
+    l = 0; // loop start number
     n = 5; // how many result needed
 
     pascalTriangle(l, n, p);
